@@ -1,0 +1,163 @@
+/*removendo a formatação padrão do navegador*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+/*espaçamento,cor e cor da font do cbeçalho*/
+header{              
+    padding: 16px 0;
+    background-color: rgb(109, 1, 1);
+    color: #ecf0f1;
+    font-family: "Poetsen one";
+}
+
+/*alinhando os li's, pois uma margem superior e determinou o tamanho das fonts*/
+header nav li{   
+    display: inline;
+    margin-left: 16px;
+    font-size: 16px;
+}
+
+/*cor da fonte e tirou o efeito*/
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*alinhou um do lado do outro as li's, dps colocou td lado a lado e por fim, deu espaçamento*/
+header .container,
+section .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*efeito quando passa o mouse muda a cor*/
+header nav li a:hover{
+    background-color: rgb(146, 66, 66);
+}
+
+/*altura e largura da img*/
+.img-init{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%; /*deixando a img redonda*/
+    border: 5px solid rgb(255, 5, 5); /*fazendo a borda vermelha*/
+    margin-bottom: 32px;
+    margin-right: 40px;
+}
+
+/*centralizou e deu espaçamento*/
+section {
+    text-align: center;
+    padding: 32px;
+}
+
+section h2{
+    color: #ecf0f1;
+    padding: 16px;
+    font-size: 32px;
+}
+
+section p{
+    color: #ecf0f1;
+    margin-bottom: 8px;
+}
+
+#paragf{
+    margin-left: 40px;
+}
+
+.item{
+    display: grid;
+    color: #ecf0f1;
+    align-items: normal;
+    text-align: start;
+}
+
+.item img{
+    height: 100px;
+    align-items: end;
+    margin-bottom: 12px;
+}
+
+.texto{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+section h2{
+    margin-bottom: 50px;
+    font-size: 32px;
+    font-family: "Poetsen one"
+}
+
+#contato .container{
+    display: block;
+}
+
+.meios{
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+h3{
+    color: #ecf0f1;
+}
+
+textarea{
+    resize: none;
+    height: 180px;
+}
+
+section h3{
+    margin-bottom: 16px;
+}
+
+form button{
+    background-color:rgb(109, 1, 1);
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: rgb(124, 81, 81);
+}
+
+input:focus,textarea:focus{
+    outline-color: rgb(80, 55, 55);
+}
+
+#contato h2{
+    margin-right: 1200px;
+}
+
+footer{
+    background-color: rgb(109, 1, 1);
+    color: #ecf0f1;
+    padding: 16px 0;
+    justify-content: space-between;
+}
